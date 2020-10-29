@@ -3,11 +3,18 @@ footer
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    padding: 5% 5% 0 5%;
+    padding: 15% 5% 2% 5%;
+    background-color: var(--primary-color);
     background-image: url("../images/wave.svg");
     background-size: cover;
-    background-position: center;
-    min-height: 400px;
+    background-position:center;
+    position: relative;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: inherit;
 }
 
 footer h4
@@ -17,12 +24,16 @@ footer h4
     margin-bottom: 1.4em;
 }
 
+.footer-logo
+{
+}
+
 .footer-logo img
 {
-    width: 350px;
-    height: auto;
-    margin-top: 10%;
-    margin-bottom: none;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left:5%
 }
 
 .footer-content
@@ -50,5 +61,22 @@ footer h4
 /* Media Querys*/
 
 @media screen and (max-width: 768px){
+    footer
+    {
+        background-repeat: no-repeat;
+    }
 
+    .footer-logo
+    {
+        width: 100%;
+        background-color: white;
+        z-index: 1;
+        margin-bottom: 30vh;
+    }
+
+    #footer-payment-icons
+    {
+        display: flex;
+        flex-direction: row;
+    }
 }
