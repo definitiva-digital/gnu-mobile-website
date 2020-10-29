@@ -1,0 +1,32 @@
+{
+    "name": "definitivadigital/gnumobile",
+    "description": "Site institucional com blog para GNU Mobile",
+    "minimum-stability": "stable",
+    "license": "Property",
+    "authors": [{
+        "name": "Raphael Dinelli",
+        "email": "raphael@definitivadigital.com.br",
+        "homepage": "https://definitivadigital.com.br",
+        "role": "Developer"
+    }],
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source"
+        },
+        "files": [
+            "../Config.php",
+            "source/Helpers.php"
+        ]
+    },
+    "require": {
+        "ext-json": "*",
+        "ext-curl": "*",
+        "coffeecode/router": "1.0.7",
+        "coffeecode/datalayer":"1.1.4",
+        "coffeecode/optimizer":"2.0.0",
+        "phpmailer/phpmailer": "6.1.4",
+        "league/plates": "v4.0.0-alpha",
+        "league/csv": "9.3.*",
+        "monolog/monolog": "2.0.*"
+    }
+}
