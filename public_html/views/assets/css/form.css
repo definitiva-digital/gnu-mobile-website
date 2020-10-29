@@ -1,0 +1,222 @@
+/* Error Message*/
+
+#loggin-error{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#error-message{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 15px 60px;
+    /*border: 8px double #FF4444;*/
+    background-color: #FF4444;
+    border-radius: 5px;
+    color: white;
+    margin: 20px;
+}
+
+/*Newsletter Form*/
+
+.newsletter-form input[type=text],
+.newsletter-form input[type=submit]
+{
+    height: 50px;
+    border:none;
+}
+
+.newsletter-form input[type=text]
+{
+    padding-left:5px;
+    font-size: 16px;
+    width: 40%;
+}
+
+.newsletter-form input[type=text]::placeholder
+{
+    opacity: 1;
+    font: 16px;
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+.newsletter-form input[type=submit]
+{
+    width: 20%;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.newsletter-form input[type=submit]:hover
+{
+    color: var(--text-color);
+
+}
+
+.form > form
+{
+    width: 100%;
+}
+
+.form-input-group
+{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+.form input[type=text],
+.form input[type=email],
+.form select
+{
+    width: 100%;
+    padding-left: 10px;
+    height: 50px;
+    border: none;
+    background-color: rgba(200,200,200,0.3);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #7A7A7A;
+    margin-bottom: 10px;
+}
+
+.form textarea
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    height: 100px;
+    resize: none;
+    overflow-y: hidden;
+    color: #7A7A7A;
+    font-size: 16px;
+}
+
+.form input[type=text]:hover,
+.form input[type=email]:hover,
+.form textarea:hover,
+.form select:hover,
+.form input[type=text]:focus,
+.form input[type=email]:focus,
+.form textarea:focus,
+.form select:focus,
+.form input[type=submit]:hover,
+.form input[type=submit]:focus
+{
+    border: none;
+    outline: none;
+}
+
+.form textarea::placeholder
+{
+    font-size: 16px;
+}
+
+/*DEFAULT LOAD*/
+.ajax_load {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+
+.ajax_load_box {
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.ajax_load_box_circle {
+    border: 16px solid #e3e3e3;
+    border-top: 16px solid #2db1ff;
+    border-radius: 50%;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+
+    -webkit-animation: spin 1.2s linear infinite;
+    -o-animation: spin 1.2s linear infinite;
+    animation: spin 1.2s linear infinite;
+}
+
+.ajax_load_box_title {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* CUSTOM FORMS*/
+
+#process-form
+{
+    width: 30%;
+}
+
+@media screen and (max-width: 768px)
+{
+    .newsletter-form input[type=text],
+    .newsletter-form input[type=submit]
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-form
+    {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-around;
+        width: 100% !important;
+        padding: 0 20px;
+    }
+
+    .form-input-group
+    {
+        flex-direction: column;
+    }
+
+    .form-input-group > div
+    {
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    #process-form
+    {
+        width: 100%;
+        padding: 5% 10%;
+    }
+}
+

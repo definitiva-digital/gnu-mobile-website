@@ -1,0 +1,49 @@
+.btn
+{
+    padding: 10px 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 3px solid rgba(0,0,0,0.2);
+    cursor: pointer;
+    text-align: center;
+}
+
+.gray
+{
+    background-color: #7A7A7A;
+    color: white;
+}
+
+.pri
+{
+    background-color: var(--primary-color);
+    color: white;
+}
+.sec
+{
+    background-color: var(--secundary-color);
+    color: white;
+}
+
+.hover-gray:hover
+{
+    background-color: #7A7A7A;
+}
+
+.hover-pri:hover
+{
+    background-color: var(--primary-color);
+}
+
+.hover-sec:hover
+{
+    background-color: var(--secundary-color);
+}
+
+@media screen and (max-width: 768px)
+{
+
+}

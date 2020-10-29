@@ -1,0 +1,613 @@
+.container
+{
+    width: 100%;
+    height: 100%;
+}
+
+.container-full-size
+{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.large
+{
+    width:100% !important;
+}
+
+.banner
+{
+    background-position: center center;
+    background-size: cover;
+}
+
+.container-80
+{
+    width: 80%;
+}
+
+.container-60
+{
+    width: 60%;
+}
+
+
+/* COLUMNS */
+.column-2{
+    width: 50%;
+}
+
+.column-3
+{
+    width: 33%;
+}
+
+.column-4
+{
+    width: 25%;
+}
+
+.column-5{
+    width: 20%;
+}
+
+.column-6
+{
+    width: 16.66%;
+}
+
+.column30
+{
+    width: 30%;
+}
+
+.column55
+{
+    width: 55%;
+}
+
+.column60
+{
+    width: 60%
+}
+
+.column70
+{
+    width: 70%;
+}
+
+.column75
+{
+    width: 75%
+}
+
+/* FLEX-BOX */
+.content
+{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.center
+{
+    justify-content: center;
+}
+
+.middle
+{
+    align-items: center;
+}
+
+.jus-saround
+{
+    justify-content: space-around;
+}
+
+.jus-sbetween
+{
+    justify-content: space-between;
+}
+
+.jus-end
+{
+    justify-content: flex-end;
+}
+
+.jus-start
+{
+    justify-content: flex-start;
+}
+
+.align-center
+{
+    align-items: center;
+}
+
+.align-end
+{
+    align-items: flex-end;
+}
+
+.align-start
+{
+    align-items: flex-start;
+}
+
+.wrap-content
+{
+    flex-wrap: wrap;
+}
+
+.no-wrap
+{
+    flex-wrap: nowrap;
+}
+
+/* PADDINGS AND MARGINS */
+
+.padding-5px
+{
+    padding: 5px;
+}
+
+.padding-5
+{
+    padding: 5%;
+}
+
+.padding-5-10{
+    padding: 5% 10%;
+}
+
+.padding-2-10
+{
+    padding: 2% 10%;
+}
+
+.padding-2-5
+{
+    padding: 2% 5%;
+}
+
+.padding-10-2
+{
+    padding: 10% 2%;
+}
+
+.padding-10px
+{
+    padding:10px
+}
+
+.padding-10
+{
+    padding: 10%;
+}
+
+.padding-2
+{
+    padding: 2%
+}
+
+.padding-5px
+{
+    padding: 5px;
+}
+
+.padding-5
+{
+    padding: 5%;
+}
+
+.padding-10px
+{
+    padding:10px
+}
+
+.padding-10
+{
+    padding: 10%;
+}
+
+.padding-2
+{
+    padding: 2%
+}
+
+.margin-5px
+{
+    margin: 5px;
+}
+
+.margin-5
+{
+    margin: 5%;
+}
+
+.margin-10px
+{
+    margin:10px
+}
+
+.margin-10
+{
+    margin: 10%;
+}
+
+.margin-2
+{
+    margin: 2%
+}
+
+.margin-5px
+{
+    margin: 5px;
+}
+
+.margin-5
+{
+    margin: 5%;
+}
+
+.margin-10px
+{
+    margin:10px
+}
+
+.margin-10
+{
+    margin: 10%;
+}
+
+.margin-2
+{
+    margin: 2%
+}
+
+/* Variations*/
+
+.padding-ver-5
+{
+    padding: 5% 0;
+}
+
+.padding-ver-10px
+{
+    padding: 10px 0;
+}
+
+.padding-ver-20px
+{
+    padding: 20px 0;
+}
+
+.padding-ver-10
+{
+    padding: 10% 0;
+}
+
+.padding-hor
+{
+    padding: 0 30px;
+}
+
+.padding-hor-5
+{
+    padding: 0 5%;
+}
+
+.padding-hor-10
+{
+    padding: 0 10%;
+}
+
+.padding-ver
+{
+    padding: 30px 0;
+}
+
+.padding-right-10px
+{
+    padding-right: 10px;
+}
+
+.padding-left-10px
+{
+    padding-left: 10px;
+}
+
+.margin-hor
+{
+    margin: 0 30px
+}
+
+.margin-ver
+{
+    margin: 30px 0;
+}
+
+.margin-ver-2
+{
+    margin: 2% 0;
+}
+
+.margin-ver-5
+{
+    margin: 5% 0 !important;
+}
+
+.margin-hor-2
+{
+    margin: 0 2%;
+}
+
+.margin-hor-5
+{
+    margin: 0 5%
+}
+
+.margin-right-10px
+{
+    margin-right: 10px ;
+}
+
+.margin-top
+{
+    margin-top: 30px;
+}
+
+.margin-top-5
+{
+    margin-top: 5%;
+}
+
+.margin-bottom
+{
+    margin-bottom: 30px;
+}
+
+/* Backgrounds and Colors */
+
+.bg-white
+{
+    background-color: white;
+}
+
+.bg-primary
+{
+    background-color: var(--primary-color) !important;
+}
+
+.bg-secundary
+{
+    background-color: var(--secundary-color) !important;
+}
+
+.bg-light-gray
+{
+    background-color: #F6F6F6;
+}
+
+.text-light
+{
+    color: #fff;
+}
+
+.text-dark
+{
+    color: #000;
+}
+
+.text-gray
+{
+    color: var(--text-color);
+}
+
+.text-light-gray
+{
+    color: #555;
+}
+
+.text-primary
+{
+    color: var(--primary-color);
+}
+
+.text-secundary
+{
+    color: var(--secundary-color);
+}
+
+/* Images*/
+
+.block-image
+{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 268px;
+}
+
+.divider
+{
+    width:10%;
+    height: 2px;
+    margin: 20px 0;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.overlay
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+.overlay-black
+{
+    background-color: #00000060;
+}
+
+.overlay-primary
+{
+    background-color: #423d1999;
+}
+
+.overlay-secundary
+{
+    background-color: #dcb93199;
+}
+
+/* CUSTOM BLOCKS */
+
+.flip-card
+{
+    /*margin: 5px;*/
+    height: 100%;
+    min-height: 250px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.flip-front i
+{
+    font-size: 44px;
+    color: var(--primary-color);
+    padding: 6%;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.flip-front,
+.flip-back
+{
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+}
+
+.flip-back
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    background-color: var(--primary-color);
+    z-index: 1;
+
+}
+
+.flip-card:hover > .flip-front
+{
+    display: none;
+}
+
+.flip-card:hover > .flip-back
+{
+    display: flex;
+    animation: card-flip 0.7s linear 1;
+}
+
+@keyframes card-flip {
+    0%
+    {
+    top:0;
+
+        transform: scale(0.1);
+        opacity: 0.1;
+        border: 5px solid #423d1901;
+    }
+    20%
+    {
+        transform: scale(.2);
+        opacity: 0.2;
+        border: 5px solid #423d1910
+    }
+    40%
+    {
+        transform: scale(.4);
+        opacity: 0.4;
+        border: 20px solid #423d1920
+    }
+    60%
+    {
+        transform: scale(.6);
+        opacity: 0.6;
+        border: 20px solid #423d1940
+    }
+    80%
+    {
+        transform: scale(.8);
+        opacity: 0.8;
+        border: 20px solid #423d1960
+    }
+    100%
+    {
+        transform: scale(1);
+        opacity: 1;
+        border: 20px solid #423d19
+    }
+}
+
+/* Media Querys */
+
+@media screen and (max-width: 768px)
+{
+    .padding-10
+    {
+        padding: 10% 20px ;
+    }
+
+    .padding-hor-10
+    {
+        padding: 0 20px;
+    }
+
+    .padding-right-10px,
+    .padding-left-10px
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .column-2,
+    .column-3,
+    .column-4,
+    .column-5,
+    .column-6,
+    .column30,
+    .column55,
+    .column60,
+    .column70,
+    .column75,
+    .column80
+    {
+        width: 100%;
+    }
+
+
+    .content
+    {
+        flex-direction: column;
+    }
+
+    a.content
+    {
+        flex-direction: row;
+    }
+
+}

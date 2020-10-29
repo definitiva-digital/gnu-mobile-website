@@ -1,0 +1,54 @@
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 5% 5% 0 5%;
+    background-image: url("../images/wave.svg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+footer h4
+{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1.4em;
+}
+
+.footer-logo img
+{
+    width: 350px;
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: none;
+}
+
+.footer-content
+{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-content a
+{
+    text-decoration: none;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.footer-content i
+{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Media Querys*/
+
+@media screen and (max-width: 768px){
+
+}
