@@ -27,7 +27,7 @@
         <section class="column-2">
             <nav class="header-menu">
                 <ul class="">
-                    <li><a href="<?= "#" ?>">Soluções</a></li>
+                    <li><a href="<?= $router->route('web.services') ?>">Soluções</a></li>
                     <li><a href="<?= "#" ?>">Vantagens</a></li>
                     <li><a href="<?= "#" ?>">Depoimentos</a></li>
                     <li><a href="<?= "#" ?>">Contato</a></li>

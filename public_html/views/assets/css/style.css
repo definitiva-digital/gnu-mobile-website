@@ -9,6 +9,7 @@
 @import "footer.css";
 @import "popup.css";
 @import "custom.css";
+@import "text.css";
 
 :root{
     /*--primary-color: #dcb931;*/
@@ -45,129 +46,12 @@ body {
     border-radius: 10px;
 }
 
-h2
-{
-    font-size: 25px;
-    font-weight: 500;
-    color: var(--primary-color);
-}
-
-.size-12
-{
-    font-size: 12px;
-}
-
-.size-14
-{
-    font-size: 14px;
-}
-
-.size16
-{
-    font-size: 16px;
-}
-
-.size18{
-    font-size: 18px;
-}
-
-.size20{
-    font-size: 20px;
-}
-
-.size-22
-{
-    font-size: 22px !important;
-}
-
-.size-26
-{
-    font-size: 26px !important;
-}
-
-.size-36
-{
-    font-size: 36px !important;
-}
-
-.size-50{
-    font-size: 50px !important;
-}
-
-/* LINE HEIGHTS */
-.line-2
-{
-    line-height: 2em;
-}
-
-/* WEIGHTS */
-.thin
-{
-    font-weight: 300;
-}
-
-.normal
-{
-    font-weight: 400;
-}
-
-.normal-bold
-{
-    font-weight: 500;
-}
-
-.bold
-{
-    font-weight: 700;
-}
-
-/* TEXT-TRANSFORM*/
-
-.upper
-{
-    text-transform: uppercase;
-}
-
-/* POSITIONS*/
-
-.pos-relative
-{
-    position: relative;
-}
-
-/* Youtube */
-#embeded-video > iframe
-{
-    width: 500px;
-    height: 315px;
-    position: sticky;
-    top: 0;
-}
-
-@media screen and (max-width: 768px){
-    #embeded-video{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #embeded-video > iframe
-    {
-        width: 350px;
-        height: 200px;
-    }
-
-    .mob-text-center{
-        text-align: center;
-    }
-
-    .center-mobile
-    {
-        text-align: center;
-    }
-}
-
 /* Borders */
+.half-rounded
+{
+    border-radius: 25px;
+}
+
 .border
 {
     border: 1px solid #ccc !important;

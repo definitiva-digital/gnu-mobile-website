@@ -30,6 +30,20 @@ class Web extends Controller
         ]);
     }
 
+    public function services()
+    {
+        $head = $this->seo->optimize(
+            "Bem vindo a {SITE['name']}",
+            site('desc'),
+            $this->router->route("web.services"),
+            routeImage("GNU MOBILE")
+        )->render();
+
+        echo $this->view->render("theme/pages/services",[
+            "head" => $head,
+        ]);
+    }
+
     public function test()
     {
 

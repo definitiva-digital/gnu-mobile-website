@@ -206,6 +206,129 @@
     background-attachment: fixed;
 }
 
+/* SVG */
+
+.service-ilustration1
+{
+    max-width: 50vw;
+}
+
+/* ICONS */
+.title-icon
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.service-card
+{
+    margin: 30vh 2% 0 2%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(200,200,200, .2);
+}
+
+.service-card:hover > .service-icon
+{
+
+    border-color: var(--secundary-color);
+    transform: scale(1.2)translate(-40%, 0);
+    animation: rodando 1.5s linear 1; /* Mah oeeee */
+}
+
+@keyframes rodando {
+
+    0%
+    {
+        border:none;
+    }
+    25%
+    {
+        border-top: 10px solid var(--secundary-color);
+    }
+    50%
+    {
+
+        border-right: 10px solid var(--secundary-color);
+    }
+    75%
+    {
+
+        border-left: 10px solid var(--secundary-color);
+
+    }
+    100%
+    {
+        border-bottom: 10px solid var(--secundary-color);
+    }
+
+}
+
+.service-card:hover > .service-content p
+{
+    border-color: rgba(252, 76, 2, .6);
+    border-radius: 100%;
+    border-right: 10px solid rgba(0, 48, 135, .6);
+}
+
+.service-icon
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 37vh;
+    width: 37vh;
+    padding: 7%;
+    border-radius: 50%;
+    border: 10px solid var(--primary-color);
+    position: absolute;
+    top: -25vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transiton: 0.5s;
+}
+
+.service-icon i
+{
+    color: #7A7A7A;
+    font-size: 75px;
+}
+
+.service-icon p
+{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #7A7A7A;
+    transition: 0.5s;
+}
+
+.service-content
+{
+    padding: 15vh 5px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.7em;
+    color: #555555;
+
+}
+
+.service-content p
+{
+    border-left: 5px solid var(--primary-color);
+    padding-left: 10px;
+}
+
+
 @media screen and (max-width: 768px)
 {
     .content-absolute{
@@ -227,5 +350,45 @@
     #accordion-image
     {
         min-height: 65vh;
+    }
+
+    .service-ilustration1
+    {
+        max-width: 80vw;
+    }
+
+    .service-ilustration2
+    {
+        max-width: 10vw;
+    }
+
+    #service-img
+    {
+        padding: 0 10px;
+    }
+
+    #service-banner h1
+    {
+        font-size: 50px;
+    }
+
+    #service-banner h3
+    {
+        font-size: 28px;
+    }
+
+    #service-banner p
+    {
+        font-size: 18px;
+    }
+
+    .service-card
+    {
+        margin: 15vh 2%;
+    }
+
+    #card-first
+    {
+        margin: 30vh 2% !important;
     }
 }
