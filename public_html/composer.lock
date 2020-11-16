@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33c5a5e92563743c2a1ea2d597dcf0ec",
+    "content-hash": "0ac741e465010a9921624109965cb056",
     "packages": [
         {
             "name": "coffeecode/datalayer",
@@ -53,6 +53,10 @@
                 "save",
                 "upinside"
             ],
+            "support": {
+                "issues": "https://github.com/robsonvleite/datalayer/issues",
+                "source": "https://github.com/robsonvleite/datalayer/tree/1.1.4"
+            },
             "time": "2019-10-29T13:34:17+00:00"
         },
         {
@@ -102,7 +106,59 @@
                 "twitter card",
                 "upinside"
             ],
+            "support": {
+                "issues": "https://github.com/robsonvleite/optimizer/issues",
+                "source": "https://github.com/robsonvleite/optimizer/tree/master"
+            },
             "time": "2019-08-29T14:26:45+00:00"
+        },
+        {
+            "name": "coffeecode/paginator",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/robsonvleite/paginator.git",
+                "reference": "7ee353b183fa2915ba2e2d7296108c075b7d0917"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/robsonvleite/paginator/zipball/7ee353b183fa2915ba2e2d7296108c075b7d0917",
+                "reference": "7ee353b183fa2915ba2e2d7296108c075b7d0917",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CoffeeCode\\Paginator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robson V. Leite",
+                    "email": "cursos@upinside.com.br",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Paginator is simple and is ready to generate results navigation in your application",
+            "homepage": "http://www.upinside.com.br",
+            "keywords": [
+                "Coffeecode",
+                "pagination",
+                "paginator",
+                "upinside"
+            ],
+            "support": {
+                "issues": "https://github.com/robsonvleite/paginator/issues",
+                "source": "https://github.com/robsonvleite/paginator/tree/master"
+            },
+            "time": "2020-06-29T14:43:29+00:00"
         },
         {
             "name": "coffeecode/router",
@@ -147,6 +203,10 @@
                 "routes",
                 "upinside"
             ],
+            "support": {
+                "issues": "https://github.com/robsonvleite/router/issues",
+                "source": "https://github.com/robsonvleite/router/tree/master"
+            },
             "time": "2019-09-30T16:29:47+00:00"
         },
         {
@@ -216,6 +276,13 @@
                 "read",
                 "write"
             ],
+            "support": {
+                "docs": "https://csv.thephpleague.com",
+                "forum": "https://groups.google.com/forum/#!forum/thephpleague",
+                "issues": "https://github.com/thephpleague/csv/issues",
+                "rss": "https://github.com/thephpleague/csv/releases.atom",
+                "source": "https://github.com/thephpleague/csv"
+            },
             "time": "2019-07-30T14:39:11+00:00"
         },
         {
@@ -288,6 +355,10 @@
                 "templating",
                 "views"
             ],
+            "support": {
+                "issues": "https://github.com/thephpleague/plates/issues",
+                "source": "https://github.com/thephpleague/plates/tree/master"
+            },
             "time": "2018-01-31T07:20:23+00:00"
         },
         {
@@ -369,6 +440,10 @@
                 "logging",
                 "psr-3"
             ],
+            "support": {
+                "issues": "https://github.com/Seldaek/monolog/issues",
+                "source": "https://github.com/Seldaek/monolog/tree/2.0.2"
+            },
             "time": "2019-12-20T14:22:59+00:00"
         },
         {
@@ -431,6 +506,10 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "support": {
+                "issues": "https://github.com/PHPMailer/PHPMailer/issues",
+                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.1.4"
+            },
             "time": "2019-12-10T11:17:38+00:00"
         },
         {
@@ -478,6 +557,9 @@
                 "psr",
                 "psr-3"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.3"
+            },
             "time": "2020-03-23T09:12:05+00:00"
         }
     ],
@@ -494,5 +576,5 @@
         "ext-curl": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
