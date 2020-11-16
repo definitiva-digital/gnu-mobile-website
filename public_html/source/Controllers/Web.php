@@ -44,6 +44,22 @@ class Web extends Controller
         ]);
     }
 
+    public function blog():void
+    {
+
+
+        $head = $this->seo->optimize(
+            "Bem vindo a {SITE['name']}",
+            site('desc'),
+            $this->router->route("web.blog"),
+            routeImage("GNU MOBILE")
+        )->render();
+
+        echo $this->view->render("theme/pages/blog",[
+            "head" => $head,
+        ]);
+    }
+
     public function test()
     {
 

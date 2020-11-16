@@ -16,6 +16,7 @@ $router->namespace("Source\Controllers");
 $router->group(null);
 $router->get('/', 'Web:Home', 'web.home');
 $router->get('/solucoes', 'Web:Services', 'web.services');
+$router->get('/blog', 'Web:Blog', 'web.blog');
 $router->get('/teste', 'Web:Test', 'web.test');
 $router->post('/register', 'App:Register','app.register');
 
