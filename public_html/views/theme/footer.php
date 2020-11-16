@@ -95,3 +95,4 @@
 <script src="<?= asset('js/jquery.js') ?>"></script>
 <script src="<?= asset('js/mobile-menu.js') ?>"></script>
 <script src="<?= asset('js/sticky-header.js') ?>" ></script>
+<script src="<?= asset('js/softAnchor.js') ?>" ></script>

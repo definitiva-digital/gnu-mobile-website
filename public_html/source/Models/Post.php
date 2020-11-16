@@ -6,8 +6,15 @@ namespace Source\Models;
 
 use CoffeeCode\DataLayer\DataLayer;
 
+/**
+ * Class Post
+ * @package Source\Models
+ */
 class Post extends DataLayer
 {
+    /**
+     * Post constructor.
+     */
     public function __construct()
     {
         parent::__construct('posts', [
@@ -20,6 +27,9 @@ class Post extends DataLayer
         ]);
     }
 
+    /**
+     * @return Category|null
+     */
     public function getCategory(): ?Category
     {
         if(isset($this->id)){

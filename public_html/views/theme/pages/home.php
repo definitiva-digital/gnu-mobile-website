@@ -29,7 +29,7 @@
         </article>
     </div>
 </section><!-- slides -->
-<section class="content center wrap-content padding-5-10">
+<section class="content center wrap-content padding-5-10" id="gnu-benefits">
     <h2 class="text-center margin-bottom">Sistema 100% próprio, dinâmico, rápido, com interface interativa e prática.
         Solução de baixo custo e ALTA qualidade!</h2>
     <article class="pos-relative" id="gnu-stats1">
@@ -247,26 +247,9 @@
         background-attachment: fixed;
     ">
     <h2 class="size-36 text-center text-light">Ultimas Notícias</h2>
-    <section class="container content center middle">
+    <section class="container content middle wrap-content">
         <?php foreach ([1,2,3] as $i): ?>
-            <article class="column-3 content column jus-start post-feed">
-                <a href="#">
-                    <div class="post-feed-image" style=
-                    "
-                            background-image: url(<?= asset('images/gnu-presentation1.jpg') ?>);
-                            ">
-                    </div>
-                </a>
-                <div class="post-feed-content">
-                    <h3 class="post-feed-title"><a href="#">Loren ipsum dolor sit amet, consectetur</a></h3>
-                    <span class="post-meta">31 de agosto de 2020</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vestibulum rhoncus ut odio id posuere. Vestibulum dignissim sem non metus elementum consequat.
-                        Sed fermentum, lacus interdum volutpat dapibus, nunc ante commodo nibh, ac eleifend lectus dolor ut
-                        metus. Vivamus dapibus nec elit tempor sodales.</p>
-                    <a class="post-link" href="#" id="<?= "post-link{$i}" ?>">Leia Mais >></a>
-                </div>
-            </article>
+            <?php $v->insert('theme/fragments/post-feed-single', ["i" => $i]); ?>
         <?php endforeach; ?>
     </section>
 
@@ -280,4 +263,5 @@
 <script src="<?= asset('js/slider.js') ?>"></script>
 <script src="<?= asset('js/testimonial-carousel.js') ?>"></script>
 <script src="<?= asset('js/accordion.js') ?>"></script>
+
 <?php $v->end('js') ?>

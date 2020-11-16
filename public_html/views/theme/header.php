@@ -21,27 +21,27 @@
 </header>
 <section class="large content padding-hor bg-white" id="top-header">
     <article class="nav-logo">
-        <a href="<?= site()?>"><img src="<?= asset("images/gnu-logo.png") ?>"></a>
+        <a id="home-link" href="<?= site()?>"><img src="<?= asset("images/gnu-logo.png") ?>"></a>
     </article>
     <article class="nav-info">
         <section class="column-2">
             <nav class="header-menu">
                 <ul class="">
                     <li><a href="<?= $router->route('web.services') ?>">Soluções</a></li>
-                    <li><a href="<?= "#" ?>">Vantagens</a></li>
-                    <li><a href="<?= "#" ?>">Depoimentos</a></li>
+                    <li><a href="<?= "#gnu-benefits" ?>" class="soft-achor">Vantagens</a></li>
+                    <li><a href="<?= "#testimonial-section"  ?>" class="soft-achor">Depoimentos</a></li>
                     <li><a href="<?= "#" ?>">Contato</a></li>
-                    <li><a href="<?= "#" ?>">Blog</a></li>
+                    <li><a href="<?= $router->route('web.blog') ?>">Blog</a></li>
                 </ul>
             </nav>
             <nav class="mobile-menu">
                 <i class="fa fa-bars mobile-icon" id="mobile-icon"></i>
                 <ul class="mobile-menu-dropdown">
-                    <li><a href="<?= "#" ?>">Soluções</a></li>
-                    <li><a href="<?= "#" ?>">Vantagens</a></li>
-                    <li><a href="<?= "#" ?>">Depoimentos</a></li>
+                    <li><a href="<?= $router->route('web.services') ?>">Soluções</a></li>
+                    <li><a href="<?= $router->route('web.home') . "/#gnu-benefits" ?>" class="soft-achor">Vantagens</a></li>
+                    <li><a href="<?= $router->route('web.home') . "/#testimonial-section"  ?>" class="soft-achor">Depoimentos</a></li>
                     <li><a href="<?= "#" ?>">Contato</a></li>
-                    <li><a href="<?= "#" ?>">Blog</a></li>
+                    <li><a href="<?= $router->route('web.blog') ?>">Blog</a></li>
                 </ul>
             </nav>
         </section>
