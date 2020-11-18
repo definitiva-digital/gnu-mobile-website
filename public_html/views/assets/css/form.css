@@ -64,17 +64,18 @@
 .form-input-group
 {
     width: 100%;
-    margin: 20px 0;
     display: flex;
     /*justify-content: space-between;*/
 }
 
 .form input[type=text],
 .form input[type=email],
-.form select
+.form select,
+.form textarea
 {
     width: 100%;
     padding-left: 10px;
+    margin-right: 20px;
     height: 50px;
     border: none;
     background-color: rgba(200,200,200,0.3);
@@ -86,16 +87,9 @@
 
 .form textarea
 {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: white;
-    border-radius: 5px;
-    height: 100px;
+    height: 130px;
     resize: none;
-    overflow-y: hidden;
-    color: #7A7A7A;
-    font-size: 16px;
+    padding: 10px;
 }
 
 .form input[type=text]:hover,
@@ -115,7 +109,7 @@
 
 .form textarea::placeholder
 {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /*DEFAULT LOAD*/
@@ -183,6 +177,45 @@
     width: 30%;
 }
 
+#contact-form-area
+{
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: 10001;
+
+}
+
+#contact-form-area .form
+{
+    width: 40%;
+    background-color: white;
+    padding: 5%;
+    position: relative;
+}
+
+#contact-form-area .form form .form-input-group input
+{
+    margin-bottom: 30px;
+}
+
+#contact-close
+{
+    color: #555555;
+    position: absolute;
+    right: 2% ;
+    top: 5%;
+    cursor: pointer;
+}
+
+
 @media screen and (max-width: 768px)
 {
     .newsletter-form input[type=text],
@@ -217,6 +250,16 @@
     {
         width: 100%;
         padding: 5% 10%;
+    }
+
+    #contact-form-area .form
+    {
+        width: 90%;
+    }
+
+    #contact-form-area .form textarea
+    {
+        height: 80px;
     }
 }
 

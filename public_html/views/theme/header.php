@@ -30,7 +30,7 @@
                     <li><a href="<?= $router->route('web.services') ?>">Soluções</a></li>
                     <li><a href="<?= "#gnu-benefits" ?>" class="soft-achor">Vantagens</a></li>
                     <li><a href="<?= "#testimonial-section"  ?>" class="soft-achor">Depoimentos</a></li>
-                    <li><a href="<?= "#" ?>">Contato</a></li>
+                    <li><a class="contact-link" href="<?= "#" ?>">Contato</a></li>
                     <li><a href="<?= $router->route('web.blog') ?>">Blog</a></li>
                 </ul>
             </nav>
@@ -40,7 +40,7 @@
                     <li><a href="<?= $router->route('web.services') ?>">Soluções</a></li>
                     <li><a href="<?= $router->route('web.home') . "/#gnu-benefits" ?>" class="soft-achor">Vantagens</a></li>
                     <li><a href="<?= $router->route('web.home') . "/#testimonial-section"  ?>" class="soft-achor">Depoimentos</a></li>
-                    <li><a href="<?= "#" ?>">Contato</a></li>
+                    <li><a class="contact-link" href="<?= "#" ?>">Contato</a></li>
                     <li><a href="<?= $router->route('web.blog') ?>">Blog</a></li>
                 </ul>
             </nav>
@@ -49,4 +49,31 @@
             <a class="btn gray hover-sec" href="#">Compre Agora</a>
         </section>
     </article>
+</section>
+<section id="contact-form-area">
+
+    <div class="form">
+        <span id="contact-close"><i class="fa fa-times"style="font-family: FontAwesome, Poppins"> Fechar</i></span>
+        <h4 class="size18 margin-bottom">Obrigado pelo interesse! Entraremos em contato o mais breve possível!</h4>
+        <form method="post" id="contact-form">
+            <div class="form-input-group">
+                <input type="text" placeholder="&#xf2bd;  Nome" name="name" style="font-family: Arial, FontAwesome;font-size: 18px">
+            </div>
+            <div class="form-input-group">
+                <input type="text" placeholder="&#xf10b;  Celular" style="font-family: Arial, FontAwesome;font-size: 18px">
+            </div>
+            <div class="form-input-group">
+                <input type="text" placeholder="&#xf0e0;  E-mail" style="font-family: Arial, FontAwesome;font-size: 18px">
+            </div>
+            <div class="form-input-group">
+                <input type="text" placeholder="&#xf21b;  Senha" style="font-family: Arial, FontAwesome;font-size: 18px">
+            </div>
+            <div class="form-input-group">
+                <textarea placeholder="&#xf086;  Conte-nos a sua necessidade" style="font-family: Arial, FontAwesome;font-size: 18px"></textarea>
+            </div>
+            <button class="btn bg-secundary large margin-ver-5 size18">Enviar</button>
+        </form>
+    </div>
+
+
 </section>
