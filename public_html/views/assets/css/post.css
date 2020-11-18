@@ -241,7 +241,13 @@
         display: none;
     }
 
-    .social-share-mobile{
+    .social-share-mobile
+    {
         display: flex;
+    }
+
+    .post-feed
+    {
+        width: 100%;
     }
 }

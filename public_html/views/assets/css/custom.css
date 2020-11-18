@@ -391,4 +391,12 @@
     {
         margin: 30vh 2% !important;
     }
+
+    .testimonial
+    {
+        max-width: 90%;
+        width: 90%;
+    }
+
 }
+
