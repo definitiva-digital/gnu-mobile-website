@@ -24,7 +24,7 @@
         <a id="home-link" href="<?= site()?>"><img src="<?= asset("images/gnu-logo.png") ?>"></a>
     </article>
     <article class="nav-info">
-        <section class="column-2">
+        <section class="column75">
             <nav class="header-menu">
                 <ul class="">
                     <li><a href="<?= $router->route('web.services') ?>">Soluções</a></li>
@@ -45,13 +45,12 @@
                 </ul>
             </nav>
         </section>
-        <section class="column-2 content jus-end pos-relative" id="header-cta">
-            <a class="btn gray hover-sec" href="#">Compre Agora</a>
+        <section class="column-4 content jus-end pos-relative" id="header-cta">
+            <a class="btn gray hover-sec contact-link" href="#">Compre Agora</a>
         </section>
     </article>
 </section>
 <section id="contact-form-area">
-
     <div class="form">
         <span id="contact-close"><i class="fa fa-times"style="font-family: FontAwesome, Poppins"> Fechar</i></span>
         <h4 class="size18 margin-bottom">Obrigado pelo interesse! Entraremos em contato o mais breve possível!</h4>
