@@ -7,6 +7,10 @@ require __DIR__ . "//vendor//autoload.php";
 
 use CoffeeCode\Router\Router;
 
+setlocale(LC_TIME, 'portuguese');
+date_default_timezone_set('America/Sao_Paulo');
+
+
 $router = new Router(site());
 $router->namespace("Source\Controllers");
 
@@ -17,6 +21,7 @@ $router->group(null);
 $router->get('/', 'Web:Home', 'web.home');
 $router->get('/solucoes', 'Web:Services', 'web.services');
 $router->get('/blog', 'Web:Blog', 'web.blog');
+$router->get("/post", 'Web:Post', 'web.post');
 $router->get('/teste', 'Web:Test', 'web.test');
 $router->post('/register', 'App:Register','app.register');
 

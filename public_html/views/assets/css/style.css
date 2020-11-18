@@ -10,6 +10,7 @@
 @import "popup.css";
 @import "custom.css";
 @import "text.css";
+@import "paginator.css";
 
 :root{
     /*--primary-color: #dcb931;*/

@@ -2,6 +2,10 @@
 
 use Monolog\Logger;
 
+/**
+ * @param string|null $param
+ * @return string
+ */
 function site(string $param = null)
 {
 if ($param && !empty(SITE[$param])) {
@@ -112,13 +116,30 @@ function formatTime(string $timef, bool $includeHour = false): string
     }
 }
 
+/**
+ * @return false|string
+ */
 function getTimeForFuneral(){
     return date('Y-m-d', strtotime('-1 day'));
 }
 
+/**
+ * @param string $timef
+ * @return string
+ * @throws Exception
+ */
 function formatTimeOnlyDayAndMonth(string $timef): string
 {
     return (new DateTime($timef))->format("d/m");
+}
+
+/**
+ * @param $time
+ * @return string
+ */
+function timeToString($time):string
+{
+    return strftime("%A, %d de %B de %Y", strtotime($time));
 }
 
 /**
@@ -249,6 +270,10 @@ function str_limit_chars(string $string, int $limit, $pointer = "..."): string
     return "{$chars} {$pointer}";
 }
 
+/**
+ * @param $document
+ * @return string
+ */
 function format_document($document)
 {
     return $document =
@@ -259,6 +284,10 @@ function format_document($document)
         ;
 }
 
+/**
+ * @param $document
+ * @return false|string|string[]
+ */
 function validate_document($document)
 {
     // 12345678901
@@ -274,6 +303,10 @@ function validate_document($document)
     return $document;
 }
 
+/**
+ * @param $zip
+ * @return string
+ */
 function format_zip_code($zip)
 {
     //04547-140
@@ -282,6 +315,10 @@ function format_zip_code($zip)
     ;
 }
 
+/**
+ * @param $zip
+ * @return false|string|string[]
+ */
 function validate_zip_code($zip)
 {
     // 12345678
@@ -296,6 +333,10 @@ function validate_zip_code($zip)
     return $zip;
 }
 
+/**
+ * @param $tel
+ * @return false|string|string[]
+ */
 function validate_telephone($tel)
 {
     //12345678901
@@ -309,6 +350,10 @@ function validate_telephone($tel)
     return $tel;
 }
 
+/**
+ * @param $amount
+ * @return string
+ */
 function formatMoney($amount): string
 {
     return "R$ " . number_format($amount, 2, ',', '.');

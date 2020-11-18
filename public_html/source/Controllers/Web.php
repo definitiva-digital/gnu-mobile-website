@@ -6,6 +6,7 @@ namespace Source\Controllers;
 
 use Source\Models\Category;
 use Source\Models\Post;
+use Source\Support\Pager;
 
 class Web extends Controller
 {
@@ -46,7 +47,13 @@ class Web extends Controller
 
     public function blog():void
     {
+        $page = filter_input(INPUT_GET, 'page', FILTER_VALIDATE_INT);
+        $posts = New Post();
+        $total = $posts->find()->count();
 
+        $pager = new Pager();
+        $pager->pager($total, 3, $page);
+        $blog = $posts->find()->limit($pager->limit())->offset($pager->offset())->fetch(true);
 
         $head = $this->seo->optimize(
             "Bem vindo a {SITE['name']}",
@@ -57,7 +64,13 @@ class Web extends Controller
 
         echo $this->view->render("theme/pages/blog",[
             "head" => $head,
+            "pager" => $pager->render(),
+            "posts" => $blog
         ]);
+    }
+
+    public function post(){
+        var_dump(filter_input(INPUT_GET, 'page', FILTER_VALIDATE_INT));
     }
 
     public function test()
@@ -109,8 +122,6 @@ class Web extends Controller
 //            $cat = (new Category())->findById($i);
 //            $cat->destroy();
 //        }
-
-
 
     }
 }
